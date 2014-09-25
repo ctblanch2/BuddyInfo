@@ -15,7 +15,11 @@ public class BuddyInfo {
 		this.name = name;
 	}
 
-
+	public void newMethod()
+	{
+		
+	}
+	
 	public String getPhoneNumber() {
 		return phoneNumber;
 	}
