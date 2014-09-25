@@ -15,6 +15,10 @@ public class BuddyInfo {
 		this.name = name;
 	}
 
+	public void newBranchMethod()
+	{
+		
+	}
 
 	public String getPhoneNumber() {
 		return phoneNumber;
