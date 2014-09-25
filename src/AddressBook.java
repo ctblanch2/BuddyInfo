@@ -4,13 +4,9 @@ public class AddressBook {
 	
 	private ArrayList<BuddyInfo> buddies;
 	
-	public static void main(String args[])
+	public AddressBook()
 	{
-		System.out.println("Address book");
-		BuddyInfo b = new BuddyInfo();
-		AddressBook book = new AddressBook();
-		book.addBuddy(b);
-		book.removeBuddy(b);
+		buddies = new ArrayList<BuddyInfo>();
 	}
 	
 	public void addBuddy(BuddyInfo buddy)
@@ -21,5 +17,13 @@ public class AddressBook {
 	public void removeBuddy(BuddyInfo buddy)
 	{
 		buddies.remove(buddy);
+	}
+	
+	public static void main(String args[])
+	{
+		BuddyInfo b = new BuddyInfo();
+		AddressBook book = new AddressBook();
+		book.addBuddy(b);
+		book.removeBuddy(b);
 	}
 }
